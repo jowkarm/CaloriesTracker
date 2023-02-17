@@ -1,0 +1,62 @@
+<!--
+  Mehdi Jokar 
+
+  This is the HTML file for the calorie tracker web page.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calorie tracker!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <h1>Weight Conversion</h1>
+        <div class="control-group">
+          <label>Weight in lbs</label>
+          <input type="text" id="lbs" />
+        </div>
+        <button id="lbs-to-kgs">Convert to kgs</button>
+      </section>
+
+      <section>
+        <h1>Workout METs</h1>
+        <div class="control-group">
+          <label>Workout type</label>
+          <select id="workouts">
+            <option value="5.8">bicycling, leisure, 9.4 mph</option>
+            <option value="7.3">dancing, aerobic, high impact</option>
+            <option value="7">jogging, general</option>
+            <option value="8">basketball, game</option>
+            <option value="6">fencing</option>
+            <option value="3.5">hang gliding</option>
+          </select>
+        </div>
+        <button id="workout-to-met">Convert to MET</button>
+      </section>
+
+      <section>
+        <h1>Calories burned per minute</h1>
+        <div class="control-group">
+          <label>MET</label>
+          <input type="text" id="met" />
+        </div>
+        <div class="control-group">
+          <label>Weight in kg</label>
+          <input type="text" id="kgs" />
+        </div>
+        <button id="calc-calories">Calculate calories</button>
+      </section>
+      <img src="colories.png" alt="" />
+    </main>
+
+    <aside>
+      <textarea id="console"></textarea>
+    </aside>
+    <script src="script.js"></script>
+  </body>
+</html>
